@@ -30,9 +30,16 @@ export default function Kadernictvi() {
             <a className="lux-btn secondary" href="tel:+420774173811">Zavolat do salonu</a>
           </div>
         </div>
-        <div className="lux-visual" aria-hidden="true">
-          <div className="visual-glow" />
-          <div className="visual-frame"><span>HAIR</span><strong>BÍLÉ<br/>NÁROŽÍ</strong></div>
+        <div
+          className="lux-visual"
+          aria-hidden="true"
+          style={{
+            backgroundImage: "linear-gradient(120deg, rgba(44,28,22,.08), rgba(44,28,22,.34)), url('https://images.unsplash.com/photo-1755240637139-349a7e34b43b?auto=format&fit=crop&w=1600&q=88')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="visual-frame" style={{background:"linear-gradient(160deg,rgba(255,255,255,.18),rgba(255,255,255,.02))",backdropFilter:"blur(2px)"}}><span>HAIR</span><strong>BÍLÉ<br/>NÁROŽÍ</strong></div>
         </div>
       </section>
 
