@@ -2,36 +2,72 @@ const services = [
   {
     number: "01",
     title: "Kadeřnictví",
-    text: "Dámské, pánské i dětské střihy, styling a společenské účesy s důrazem na přirozený výsledek.",
+    text: "Dámské, pánské a dětské střihy, barvení, melírování, prodlužování a zhušťování vlasů metodou BOND PLUS, střih horkou břitvou, permanentní styling i svatební a společenské účesy včetně líčení.",
     tag: "Vlasy & styling",
   },
   {
     number: "02",
     title: "Nehtové studio",
-    text: "Precizní gelová modeláž a péče o ruce v klidném prostředí a s dlouholetou praxí.",
+    text: "Gelová modeláž nehtů s důrazem na přirozený vzhled, precizní zpracování a dlouhodobou výdrž. Studio pracuje s profesionálními materiály a kvalitními gely.",
     tag: "Nehty & manikúra",
   },
   {
     number: "03",
     title: "Pedikúra",
-    text: "Profesionální péče o chodidla, která spojuje estetiku, pohodlí a příjemný pocit po návštěvě.",
+    text: "Kompletní péče o chodidla — diagnostika, relaxační koupel, odstranění zrohovatělé kůže, otlaků a prasklin, úprava nehtů, peeling, maska, výživná kosmetika a relaxační masáž chodidel.",
     tag: "Péče & komfort",
   },
   {
     number: "04",
     title: "Kosmetika",
-    text: "Kosmetická péče a relaxační procedury zaměřené na zdravý vzhled pleti a chvíli jen pro vás.",
+    text: "Kompletní kosmetická péče, mikrojehličkování, protivráskové a problematické ošetření pleti, úprava a barvení obočí, masáže, lymfodrenáže, depilace i další relaxační procedury.",
     tag: "Pleť & relax",
   },
 ];
 
 const contacts = [
-  { role: "Kadeřnictví", name: "Jana Pelnářová", phone: "+420 774 173 811", href: "tel:+420774173811" },
-  { role: "Kadeřnictví", name: "Ivana Matýs", phone: "+420 723 643 044", href: "tel:+420723643044" },
-  { role: "Nehtové studio", name: "Alena Strejcová", phone: "+420 724 247 446", href: "tel:+420724247446" },
-  { role: "Nehtové studio", name: "Vladimíra Hrdinová", phone: "+420 606 292 826", href: "tel:+420606292826" },
-  { role: "Pedikúra & nehtový design", name: "Eva Černá", phone: "+420 774 536 824", href: "tel:+420774536824" },
-  { role: "Kosmetika", name: "Martina Dvořáková, DiS.", phone: "+420 603 100 425", href: "tel:+420603100425" },
+  {
+    role: "Kadeřnictví",
+    name: "Jana Pelnářová",
+    phone: "+420 774 173 811",
+    href: "tel:+420774173811",
+    note: "Po–Čt 9:00–17:00 · Pá 9:00–13:00 · víkend dle objednávek",
+  },
+  {
+    role: "Kadeřnictví",
+    name: "Ivana Matýs",
+    phone: "+420 723 643 044",
+    href: "tel:+420723643044",
+    note: "Provozní doba dle objednávek",
+  },
+  {
+    role: "Nehtové studio",
+    name: "Alena Strejcová",
+    phone: "+420 724 247 446",
+    href: "tel:+420724247446",
+    note: "Po–Pá dle objednávek",
+  },
+  {
+    role: "Nehtové studio",
+    name: "Vladimíra Hrdinová",
+    phone: "+420 606 292 826",
+    href: "tel:+420606292826",
+    note: "Po–Pá dle objednávek",
+  },
+  {
+    role: "Pedikúra & nehtový design",
+    name: "Eva Černá",
+    phone: "+420 774 536 824",
+    href: "tel:+420774536824",
+    note: "Provozní doba dle objednávek",
+  },
+  {
+    role: "Kosmetika",
+    name: "Martina Dvořáková, DiS.",
+    phone: "+420 603 100 425",
+    href: "tel:+420603100425",
+    note: "Provozní doba dle objednávek",
+  },
 ];
 
 export default function Home() {
@@ -58,7 +94,7 @@ export default function Home() {
           <p className="eyebrow">Salon krásy v srdci Plzně</p>
           <h1>Krása, která působí <em>přirozeně.</em></h1>
           <p className="hero-lead">
-            Jeden salon. Více profesionálních služeb. Místo, kde si dopřejete péči, klid a čas pro sebe.
+            Kadeřnictví, nehtové studio, pedikúra a kosmetika na jednom místě v centru Plzně. Dopřejte si profesionální péči, klid a čas jen pro sebe.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#kontakt">Vybrat specialistku</a>
@@ -89,10 +125,10 @@ export default function Home() {
           <h2>Nejen služba.<br />Pocit, ke kterému se chcete vracet.</h2>
           <div className="intro-copy">
             <p>
-              Salon Bílé nároží spojuje kadeřnictví, nehtové studio, pedikúru a kosmetiku na jednom místě v centru Plzně.
+              Salon Bílé nároží najdete v Prešovské ulici v samotném centru Plzně. Na jednom místě zde funguje kadeřnictví, nehtové studio, pedikúra a kosmetické studio.
             </p>
             <p>
-              Každá služba má svou specialistku, vlastní zkušenost a společný cíl — abyste odcházeli spokojení a rádi se vraceli.
+              Jednotlivé služby zajišťují samostatné specialistky s dlouholetou praxí. Objednání proto probíhá přímo u konkrétní osoby podle služby, o kterou máte zájem.
             </p>
           </div>
         </div>
@@ -129,11 +165,11 @@ export default function Home() {
         <div className="contact-heading">
           <p className="section-label light">03 · Objednání</p>
           <h2>Najděte svou<br />specialistku.</h2>
-          <p>Pro nejrychlejší domluvu volejte přímo podle služby, o kterou máte zájem.</p>
+          <p>Pro nejrychlejší domluvu volejte přímo podle služby, o kterou máte zájem. Provozní doba jednotlivých služeb se řídí objednávkami.</p>
         </div>
         <div className="contact-list">
           {contacts.map((contact) => (
-            <a className="contact-row" href={contact.href} key={`${contact.role}-${contact.name}`}>
+            <a className="contact-row" href={contact.href} key={`${contact.role}-${contact.name}`} title={contact.note}>
               <span className="contact-role">{contact.role}</span>
               <strong>{contact.name}</strong>
               <span>{contact.phone}</span>
@@ -146,18 +182,28 @@ export default function Home() {
       <section className="visit">
         <div>
           <p className="section-label">04 · Kde nás najdete</p>
-          <h2>V centru Plzně.<br />Blízko, a přitom v klidu.</h2>
+          <h2>V centru Plzně.<br />Snadno pěšky, MHD i autem.</h2>
         </div>
         <div className="visit-details">
           <div>
             <span>Adresa</span>
-            <strong>Prešovská 318/20<br />301 00 Plzeň</strong>
-            <small>1. patro</small>
+            <strong>Prešovská 318/20<br />301 00 Plzeň-Vnitřní Město</strong>
+            <small>Salon se nachází v 1. patře.</small>
           </div>
           <div>
-            <span>Provozní doba</span>
-            <strong>Po–Pá<br />8:00–18:00</strong>
-            <small>Dle objednávek lze po domluvě i večer nebo o víkendu.</small>
+            <span>Provozní doba salonu</span>
+            <strong>Po–Pá 8:00–18:00<br />So–Ne zavřeno</strong>
+            <small>Provozní doba jednotlivých služeb se liší dle objednávek. Po domluvě lze některé termíny sjednat i večer nebo o víkendu.</small>
+          </div>
+          <div>
+            <span>MHD</span>
+            <strong>Sady Pětatřicátníků</strong>
+            <small>Salon je dostupný hlavními spoji MHD. Od zastávky je to jen několik minut pěšky.</small>
+          </div>
+          <div>
+            <span>Parkování</span>
+            <strong>Plaza · Nové divadlo · Sady Pětatřicátníků</strong>
+            <small>V okolí je několik možností parkování v docházkové vzdálenosti od salonu.</small>
           </div>
           <div>
             <span>Kontakt</span>
