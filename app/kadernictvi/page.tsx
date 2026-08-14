@@ -1,5 +1,81 @@
-export const metadata = { title: "Kadeřnictví Plzeň | Bílé nároží", description: "Kadeřnictví v centru Plzně – střihy, barvení, melírování, prodlužování vlasů a společenské účesy." };
+import SalonHeader from "../components/SalonHeader";
 
-const services = ["Dámské, pánské a dětské střihy", "Barvení a melírování", "Prodlužování a zhušťování vlasů metodou BOND PLUS", "Stříhání horkou břitvou", "Svatební a společenské účesy včetně líčení", "Permanentní styling", "Poradenství a vlasová kosmetika pro domácí péči"];
+export const metadata = {
+  title: "Kadeřnictví Plzeň | Bílé nároží",
+  description: "Kadeřnictví v centru Plzně – střihy, barvení, melírování, prodlužování vlasů a společenské účesy.",
+};
 
-export default function Kadernictvi() { return <main className="detail-page"><a className="back-link" href="/">← Bílé nároží</a><section className="detail-hero"><p className="section-label">Kadeřnictví · Plzeň</p><h1>Vlasy, které budou<br/><em>opravdu vaše.</em></h1><p>Střih, barva i styling s důrazem na osobní přístup, kvalitu práce a výsledek, který vám sedí.</p></section><section className="detail-content"><div><p className="section-label">Služby</p><h2>Od střihu po kompletní proměnu.</h2><p className="detail-copy">Součástí nabídky jsou také dárkové poukazy v libovolné hodnotě a profesionální vlasová kosmetika pro domácí péči.</p></div><div className="detail-list">{services.map((s)=><div key={s}>{s}<span>↗</span></div>)}</div></section><section className="people-section"><p className="section-label">Objednání</p><div className="people-grid"><article><span>Vlasová stylistka</span><h2>Jana Pelnářová</h2><p>Po–Čt 9:00–17:00 · Pá 9:00–13:00<br/>So–Ne dle objednávek<br/>IČO 74249461</p><a href="tel:+420774173811">+420 774 173 811</a><a href="mailto:kadernictvi.pelnarova@gmail.com">kadernictvi.pelnarova@gmail.com</a></article><article><span>Vlasová stylistka</span><h2>Ivana Matýs</h2><p>Provozní doba dle objednávek.<br/>IČO 7648115</p><a href="tel:+420723643044">+420 723 643 044</a></article></div></section><section className="detail-note"><p>V salonu se používá profesionální vlasová kosmetika včetně značky ALCINA. Jana Pelnářová se dlouhodobě vzdělává v oboru a navazuje na zkušenosti získané v profesionálních salonech a na odborných školeních.</p><a className="button button-dark" href="tel:+420774173811">Objednat k Janě</a></section></main> }
+const services = [
+  ["Dámské, pánské a dětské střihy", "Střih přizpůsobený typu vlasů, stylu a osobnosti."],
+  ["Barvení a melírování", "Barva, tónování a melír s důrazem na přirozený výsledek."],
+  ["BOND PLUS", "Prodlužování a zhušťování vlasů pro plnější a delší účes."],
+  ["Stříhání horkou břitvou", "Precizní technika pro hladký a upravený vzhled vlasů."],
+  ["Společenské a svatební účesy", "Účesy pro výjimečné příležitosti včetně možnosti líčení."],
+  ["Permanentní styling", "Tvar a objem vlasů s dlouhodobějším efektem."],
+  ["Poradenství a domácí péče", "Doporučení profesionální vlasové kosmetiky podle potřeb vlasů."],
+];
+
+export default function Kadernictvi() {
+  return (
+    <main className="lux-page theme-hair">
+      <SalonHeader active="Kadeřnictví" />
+
+      <section className="lux-hero">
+        <div className="lux-hero-copy">
+          <p className="lux-kicker">Kadeřnictví · Plzeň</p>
+          <h1>Vlasy, které budou<br /><em>opravdu vaše.</em></h1>
+          <p>Střih, barva a styling s důrazem na osobní přístup, kvalitu práce a výsledek, který vám sedí.</p>
+          <div className="lux-actions">
+            <a className="lux-btn primary" href="#objednani">Objednat se</a>
+            <a className="lux-btn secondary" href="tel:+420774173811">Zavolat do salonu</a>
+          </div>
+        </div>
+        <div className="lux-visual" aria-hidden="true">
+          <div className="visual-glow" />
+          <div className="visual-frame"><span>HAIR</span><strong>BÍLÉ<br/>NÁROŽÍ</strong></div>
+        </div>
+      </section>
+
+      <section className="benefit-strip">
+        <div><span>01</span><strong>Osobní přístup</strong><small>Účes podle vás, ne podle šablony.</small></div>
+        <div><span>02</span><strong>Kvalita & zkušenosti</strong><small>Profesionální techniky a pravidelné vzdělávání.</small></div>
+        <div><span>03</span><strong>Péče o vlasy</strong><small>Důraz na zdravý vzhled a vhodnou domácí péči.</small></div>
+        <div><span>04</span><strong>Dárkové poukazy</strong><small>Poukazy v libovolné hodnotě.</small></div>
+      </section>
+
+      <section className="lux-content">
+        <div className="lux-services">
+          <p className="lux-kicker">Naše služby</p>
+          <h2>Od střihu po kompletní proměnu.</h2>
+          <div className="lux-service-list">
+            {services.map(([title, text], index) => (
+              <article key={title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div><h3>{title}</h3><p>{text}</p></div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <aside className="lux-sidebar" id="objednani">
+          <p className="lux-kicker">Náš tým</p>
+          <article className="person-card">
+            <div className="person-monogram">JP</div>
+            <div><h3>Jana Pelnářová</h3><p>Vlasová stylistka</p><a href="tel:+420774173811">+420 774 173 811</a><a href="mailto:kadernictvi.pelnarova@gmail.com">kadernictvi.pelnarova@gmail.com</a><small>IČO 74249461</small></div>
+          </article>
+          <article className="person-card">
+            <div className="person-monogram">IM</div>
+            <div><h3>Ivana Matýs</h3><p>Vlasová stylistka</p><a href="tel:+420723643044">+420 723 643 044</a><small>IČO 7648115</small></div>
+          </article>
+          <div className="hours-card"><span>Otevírací doba</span><p><strong>Po–Čt</strong> 9:00–17:00</p><p><strong>Pá</strong> 9:00–13:00</p><p><strong>So–Ne</strong> dle objednávek</p></div>
+          <div className="brand-card"><span>Profesionální péče</span><h3>ALCINA</h3><p>Profesionální vlasová kosmetika a poradenství pro domácí péči.</p></div>
+        </aside>
+      </section>
+
+      <section className="lux-cta">
+        <div><p className="lux-kicker light">Těšíme se na vás</p><h2>Dopřejte svým vlasům péči,<br/>kterou si zaslouží.</h2></div>
+        <div className="lux-actions"><a className="lux-btn primary" href="tel:+420774173811">Objednat u Jany</a><a className="lux-btn outline-light" href="tel:+420723643044">Objednat u Ivany</a></div>
+      </section>
+    </main>
+  );
+}
