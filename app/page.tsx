@@ -4,24 +4,28 @@ const services = [
     title: "Kadeřnictví",
     text: "Dámské, pánské a dětské střihy, barvení, melírování, prodlužování a zhušťování vlasů metodou BOND PLUS, střih horkou břitvou, permanentní styling i svatební a společenské účesy včetně líčení.",
     tag: "Vlasy & styling",
+    href: "/kadernictvi",
   },
   {
     number: "02",
     title: "Nehtové studio",
     text: "Gelová modeláž nehtů s důrazem na přirozený vzhled, precizní zpracování a dlouhodobou výdrž. Studio pracuje s profesionálními materiály a kvalitními gely.",
     tag: "Nehty & manikúra",
+    href: "/nehtove-studio",
   },
   {
     number: "03",
     title: "Pedikúra",
     text: "Kompletní péče o chodidla — diagnostika, relaxační koupel, odstranění zrohovatělé kůže, otlaků a prasklin, úprava nehtů, peeling, maska, výživná kosmetika a relaxační masáž chodidel.",
     tag: "Péče & komfort",
+    href: "/pedikura",
   },
   {
     number: "04",
     title: "Kosmetika",
     text: "Kompletní kosmetická péče, mikrojehličkování, protivráskové a problematické ošetření pleti, úprava a barvení obočí, masáže, lymfodrenáže, depilace i další relaxační procedury.",
     tag: "Pleť & relax",
+    href: "/kosmetika",
   },
 ];
 
@@ -140,18 +144,18 @@ export default function Home() {
             <p className="section-label">02 · Služby</p>
             <h2>Vyberte si péči,<br />kterou právě potřebujete.</h2>
           </div>
-          <p className="section-note">Objednání probíhá přímo u konkrétní specialistky.</p>
+          <p className="section-note">Klikněte na službu pro detail. Objednání probíhá přímo u konkrétní specialistky.</p>
         </div>
         <div className="service-grid">
           {services.map((service) => (
-            <article className="service-card" key={service.title}>
+            <a className="service-card" href={service.href} key={service.title}>
               <div className="service-top"><span>{service.number}</span><span>↗</span></div>
               <div>
                 <p className="service-tag">{service.tag}</p>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </section>
