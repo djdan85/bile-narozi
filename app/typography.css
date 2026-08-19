@@ -1,10 +1,10 @@
-/* Modern, readable typography layer */
+/* Unified typography scale for readability and hierarchy */
 body {
   font-size: 17px;
   line-height: 1.65;
 }
 
-/* Display type: cleaner spacing for the modern sans-serif heading font */
+/* Display type */
 .hero h1,
 .intro h2,
 .section-heading h2,
@@ -26,7 +26,13 @@ body {
 .benefit-strip strong,
 .lux-service-list h3,
 .person-card h3,
-.brand-card h3 {
+.brand-card h3,
+.visual-title h2,
+.overview-heading h1,
+.about-lux h2,
+.contact-lux h2,
+.where-lux h2,
+.lux-logo strong {
   font-family: var(--font-display), Arial, sans-serif;
   letter-spacing: -0.025em;
 }
@@ -43,22 +49,29 @@ body {
 .contact h2,
 .visit h2,
 .service-card h3,
-.lux-services h2 {
+.lux-services h2,
+.visual-title h2,
+.overview-heading h1,
+.about-lux h2,
+.contact-lux h2,
+.where-lux h2 {
   font-weight: 650;
 }
 
 /* Header and navigation */
 .desktop-nav,
-.salon-nav {
-  font-size: 13px;
+.salon-nav,
+.lux-header nav {
+  font-size: 13px !important;
   font-weight: 650;
 }
 
 .header-cta,
 .salon-book,
 .button,
-.lux-btn {
-  font-size: 12px;
+.lux-btn,
+.lux-book {
+  font-size: 12px !important;
 }
 
 .brand-copy strong {
@@ -67,28 +80,22 @@ body {
 }
 
 .brand-copy small,
-.salon-logo span {
+.salon-logo span,
+.lux-logo span {
   font-size: 9px;
 }
 
-.salon-logo strong {
+.salon-logo strong,
+.lux-logo strong {
   font-weight: 700;
 }
 
-/* Home page reading text */
-.hero-lead {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
+/* Eyebrows and utility labels */
 .eyebrow,
 .section-label,
-.lux-kicker {
-  font-size: 12px;
-}
-
-.text-link {
-  font-size: 14px;
+.lux-kicker,
+.overview-heading > p {
+  font-size: 12px !important;
 }
 
 .hero-meta span,
@@ -97,13 +104,24 @@ body {
 .service-tag,
 .statement > p,
 .contact-role,
-footer p {
-  font-size: 11px;
+footer p,
+.visual-title p {
+  font-size: 12px !important;
+}
+
+/* Main body copy */
+.hero-lead {
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .intro-copy p,
-.service-card p {
-  font-size: 16px;
+.service-card p,
+.contact-heading > p:last-child,
+.contact-lux-heading > p:last-child,
+.about-lux > p:last-child,
+.overview-heading > span {
+  font-size: 16px !important;
   line-height: 1.8;
 }
 
@@ -113,21 +131,30 @@ footer p {
   line-height: 1.75;
 }
 
-.contact-heading > p:last-child {
-  font-size: 16px;
+.text-link {
+  font-size: 14px;
 }
 
-.contact-row strong {
-  font-size: 21px;
-  font-weight: 650;
+/* Home service cards */
+.visual-title h2 {
+  font-size: 34px !important;
 }
 
-/* Home page booking list */
-.contact-lux-heading > p:last-child {
+.visual-description {
   font-size: 16px !important;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
+.visual-copy li {
+  font-size: 15px !important;
+  line-height: 1.55;
+}
+
+.visual-button {
+  font-size: 12px !important;
+}
+
+/* Booking section */
 .contact-lux-list span,
 .contact-lux-list strong,
 .contact-lux-list b {
@@ -140,58 +167,48 @@ footer p {
   opacity: .85 !important;
 }
 
-.contact-lux-list strong {
+.contact-lux-list strong,
+.contact-lux-list b {
   font-weight: 700 !important;
 }
 
 .contact-lux-list b {
-  font-weight: 700 !important;
   opacity: .95 !important;
   letter-spacing: .01em;
 }
 
-/* Bottom address / opening hours / contact block */
-.visit-details span {
-  font-size: 12px;
-  letter-spacing: .08em;
+/* Benefits */
+.benefit strong,
+.benefit-strip strong {
+  font-size: 19px !important;
+  font-weight: 700;
 }
 
-.visit-details strong,
-.visit-details a {
-  font-size: 18px;
-  line-height: 1.65;
-}
-
-.visit-details small {
-  font-size: 15px;
-  line-height: 1.65;
-}
-
-/* Current home page location block */
-.where-grid span {
-  font-size: 12px !important;
-}
-
-.where-grid strong,
-.where-grid a {
-  font-size: 18px !important;
-}
-
-.where-grid small {
-  font-size: 15px !important;
-}
-
-/* Benefits on home page */
 .benefit small,
 .benefit-strip small {
   font-size: 17px !important;
   line-height: 1.6;
 }
 
-.benefit strong,
-.benefit-strip strong {
-  font-size: 19px !important;
-  font-weight: 700;
+/* Address / opening hours / contact */
+.visit-details span,
+.where-grid span {
+  font-size: 12px !important;
+  letter-spacing: .08em;
+}
+
+.visit-details strong,
+.visit-details a,
+.where-grid strong,
+.where-grid a {
+  font-size: 18px !important;
+  line-height: 1.65;
+}
+
+.visit-details small,
+.where-grid small {
+  font-size: 15px !important;
+  line-height: 1.65;
 }
 
 /* Service detail pages */
@@ -201,7 +218,7 @@ footer p {
 }
 
 .visual-frame span {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .lux-service-list h3 {
@@ -217,14 +234,14 @@ footer p {
 .person-card p,
 .person-card a,
 .person-card small {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .hours-card p,
 .brand-card p,
 .info-note p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -232,23 +249,47 @@ footer p {
   font-weight: 700;
 }
 
+/* Mobile scale */
 @media (max-width: 720px) {
   body {
     font-size: 16px;
   }
 
-  .hero-lead,
-  .lux-hero-copy > p:last-of-type {
-    font-size: 16px;
+  .desktop-nav,
+  .salon-nav,
+  .lux-header nav {
+    font-size: 12px !important;
   }
 
+  .hero-lead,
+  .lux-hero-copy > p:last-of-type,
   .intro-copy p,
-  .service-card p {
-    font-size: 15px;
+  .service-card p,
+  .contact-heading > p:last-child,
+  .contact-lux-heading > p:last-child,
+  .about-lux > p:last-child,
+  .overview-heading > span {
+    font-size: 16px !important;
   }
 
   .section-note {
     font-size: 14px;
+  }
+
+  .visual-title h2 {
+    font-size: 31px !important;
+  }
+
+  .visual-description {
+    font-size: 15px !important;
+  }
+
+  .visual-copy li {
+    font-size: 14px !important;
+  }
+
+  .visual-button {
+    font-size: 11px !important;
   }
 
   .contact-lux-list span,
@@ -257,30 +298,9 @@ footer p {
     font-size: 20px !important;
   }
 
-  .visit-details span {
-    font-size: 11px;
-  }
-
-  .visit-details strong,
-  .visit-details a {
-    font-size: 17px;
-  }
-
-  .visit-details small {
-    font-size: 14px;
-  }
-
-  .where-grid span {
-    font-size: 11px !important;
-  }
-
-  .where-grid strong,
-  .where-grid a {
-    font-size: 17px !important;
-  }
-
-  .where-grid small {
-    font-size: 14px !important;
+  .benefit strong,
+  .benefit-strip strong {
+    font-size: 18px !important;
   }
 
   .benefit small,
@@ -288,19 +308,41 @@ footer p {
     font-size: 16px !important;
   }
 
-  .benefit strong,
-  .benefit-strip strong {
-    font-size: 18px !important;
+  .visit-details span,
+  .where-grid span {
+    font-size: 11px !important;
+  }
+
+  .visit-details strong,
+  .visit-details a,
+  .where-grid strong,
+  .where-grid a {
+    font-size: 17px !important;
+  }
+
+  .visit-details small,
+  .where-grid small {
+    font-size: 14px !important;
   }
 
   .lux-service-list p {
     font-size: 16px;
   }
 
+  .person-card p,
+  .person-card a,
+  .person-card small,
+  .hours-card p,
+  .brand-card p,
+  .info-note p {
+    font-size: 14px;
+  }
+
   .button,
   .lux-btn,
   .header-cta,
-  .salon-book {
-    font-size: 11px;
+  .salon-book,
+  .lux-book {
+    font-size: 11px !important;
   }
 }
