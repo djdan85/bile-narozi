@@ -128,20 +128,23 @@ footer p {
   line-height: 1.8;
 }
 
+.contact-lux-list span,
+.contact-lux-list strong,
+.contact-lux-list b {
+  font-size: 22px !important;
+}
+
 .contact-lux-list span {
-  font-size: 12px !important;
-  font-weight: 800;
-  letter-spacing: .1em;
-  opacity: .72 !important;
+  font-weight: 700;
+  letter-spacing: .04em;
+  opacity: .85 !important;
 }
 
 .contact-lux-list strong {
-  font-size: 22px !important;
   font-weight: 700 !important;
 }
 
 .contact-lux-list b {
-  font-size: 16px !important;
   font-weight: 700 !important;
   opacity: .95 !important;
   letter-spacing: .01em;
@@ -245,16 +248,10 @@ footer p {
     font-size: 14px;
   }
 
-  .contact-lux-list span {
-    font-size: 11px !important;
-  }
-
-  .contact-lux-list strong {
-    font-size: 20px !important;
-  }
-
+  .contact-lux-list span,
+  .contact-lux-list strong,
   .contact-lux-list b {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
 
   .visit-details span {
