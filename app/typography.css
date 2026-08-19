@@ -188,6 +188,12 @@ footer p {
   line-height: 1.6;
 }
 
+.benefit strong,
+.benefit-strip strong {
+  font-size: 19px !important;
+  font-weight: 700;
+}
+
 /* Service detail pages */
 .lux-hero-copy > p:last-of-type {
   font-size: 17px;
@@ -196,11 +202,6 @@ footer p {
 
 .visual-frame span {
   font-size: 11px;
-}
-
-.benefit-strip strong {
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .lux-service-list h3 {
@@ -285,6 +286,11 @@ footer p {
   .benefit small,
   .benefit-strip small {
     font-size: 16px !important;
+  }
+
+  .benefit strong,
+  .benefit-strip strong {
+    font-size: 18px !important;
   }
 
   .lux-service-list p {
