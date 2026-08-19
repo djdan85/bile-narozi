@@ -1,0 +1,208 @@
+/* Modern, readable typography layer */
+body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Display type: cleaner spacing for the modern sans-serif heading font */
+.hero h1,
+.intro h2,
+.section-heading h2,
+.statement h2,
+.contact h2,
+.visit h2,
+.lux-hero h1,
+.lux-services h2,
+.lux-cta h2,
+.service-card h3,
+.footer-brand,
+.salon-logo strong,
+.brand-copy strong,
+.contact-row strong,
+.hero-meta strong,
+.hero-card-word,
+.hero-card-script,
+.visual-frame strong,
+.benefit-strip strong,
+.lux-service-list h3,
+.person-card h3,
+.brand-card h3 {
+  font-family: var(--font-display), Arial, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.hero h1,
+.statement h2,
+.lux-hero h1,
+.lux-cta h2 {
+  font-weight: 700;
+}
+
+.intro h2,
+.section-heading h2,
+.contact h2,
+.visit h2,
+.service-card h3,
+.lux-services h2 {
+  font-weight: 650;
+}
+
+/* Header and navigation */
+.desktop-nav,
+.salon-nav {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.header-cta,
+.salon-book,
+.button,
+.lux-btn {
+  font-size: 12px;
+}
+
+.brand-copy strong {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.brand-copy small,
+.salon-logo span {
+  font-size: 9px;
+}
+
+.salon-logo strong {
+  font-weight: 700;
+}
+
+/* Home page reading text */
+.hero-lead {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.eyebrow,
+.section-label,
+.lux-kicker {
+  font-size: 12px;
+}
+
+.text-link {
+  font-size: 14px;
+}
+
+.hero-meta span,
+.hero-card-kicker,
+.hero-badge,
+.service-tag,
+.statement > p,
+.contact-role,
+.visit-details span,
+footer p {
+  font-size: 11px;
+}
+
+.intro-copy p,
+.service-card p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-note {
+  max-width: 360px;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.contact-heading > p:last-child {
+  font-size: 16px;
+}
+
+.contact-row strong {
+  font-size: 21px;
+  font-weight: 650;
+}
+
+.visit-details strong,
+.visit-details a {
+  font-size: 16px;
+}
+
+.visit-details small {
+  font-size: 14px;
+}
+
+/* Service detail pages */
+.lux-hero-copy > p:last-of-type {
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.visual-frame span {
+  font-size: 11px;
+}
+
+.benefit-strip strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.benefit-strip small {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.lux-service-list h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.lux-service-list p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.person-card p,
+.person-card a,
+.person-card small {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.hours-card p,
+.brand-card p,
+.info-note p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.price-pill strong {
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero-lead,
+  .lux-hero-copy > p:last-of-type {
+    font-size: 16px;
+  }
+
+  .intro-copy p,
+  .service-card p {
+    font-size: 15px;
+  }
+
+  .section-note {
+    font-size: 14px;
+  }
+
+  .button,
+  .lux-btn,
+  .header-cta,
+  .salon-book {
+    font-size: 11px;
+  }
+}
