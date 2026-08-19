@@ -181,6 +181,13 @@ footer p {
   font-size: 15px !important;
 }
 
+/* Benefits on home page */
+.benefit small,
+.benefit-strip small {
+  font-size: 15px !important;
+  line-height: 1.6;
+}
+
 /* Service detail pages */
 .lux-hero-copy > p:last-of-type {
   font-size: 17px;
@@ -196,18 +203,13 @@ footer p {
   font-weight: 700;
 }
 
-.benefit-strip small {
-  font-size: 13px;
-  line-height: 1.6;
-}
-
 .lux-service-list h3 {
   font-size: 22px;
   font-weight: 700;
 }
 
 .lux-service-list p {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -278,6 +280,15 @@ footer p {
 
   .where-grid small {
     font-size: 14px !important;
+  }
+
+  .benefit small,
+  .benefit-strip small {
+    font-size: 14px !important;
+  }
+
+  .lux-service-list p {
+    font-size: 16px;
   }
 
   .button,
