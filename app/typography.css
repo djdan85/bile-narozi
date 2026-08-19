@@ -122,6 +122,31 @@ footer p {
   font-weight: 650;
 }
 
+/* Home page booking list */
+.contact-lux-heading > p:last-child {
+  font-size: 16px !important;
+  line-height: 1.8;
+}
+
+.contact-lux-list span {
+  font-size: 12px !important;
+  font-weight: 800;
+  letter-spacing: .1em;
+  opacity: .72 !important;
+}
+
+.contact-lux-list strong {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.contact-lux-list b {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  opacity: .95 !important;
+  letter-spacing: .01em;
+}
+
 /* Bottom address / opening hours / contact block */
 .visit-details span {
   font-size: 12px;
@@ -137,6 +162,20 @@ footer p {
 .visit-details small {
   font-size: 15px;
   line-height: 1.65;
+}
+
+/* Current home page location block */
+.where-grid span {
+  font-size: 12px !important;
+}
+
+.where-grid strong,
+.where-grid a {
+  font-size: 18px !important;
+}
+
+.where-grid small {
+  font-size: 15px !important;
 }
 
 /* Service detail pages */
@@ -206,6 +245,18 @@ footer p {
     font-size: 14px;
   }
 
+  .contact-lux-list span {
+    font-size: 11px !important;
+  }
+
+  .contact-lux-list strong {
+    font-size: 20px !important;
+  }
+
+  .contact-lux-list b {
+    font-size: 16px !important;
+  }
+
   .visit-details span {
     font-size: 11px;
   }
@@ -217,6 +268,19 @@ footer p {
 
   .visit-details small {
     font-size: 14px;
+  }
+
+  .where-grid span {
+    font-size: 11px !important;
+  }
+
+  .where-grid strong,
+  .where-grid a {
+    font-size: 17px !important;
+  }
+
+  .where-grid small {
+    font-size: 14px !important;
   }
 
   .button,
